@@ -1,0 +1,63 @@
+@media (max-width: 700px) {
+	.security {
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+		background: black;
+
+		.secLogo {
+			margin: 25px 0 10px 0 !important;
+		}
+
+		h2 {
+			color: white;
+			padding: 0 55px !important;
+			font-size: 1.9rem !important;
+			line-height: 35px !important;
+		}
+
+		p {
+			color: gray;
+			padding: 13px 35px 0 35px !important;
+			font-size: 1.1rem;
+		}
+
+		.secImg {
+			width: 100%;
+		}
+	}
+}
+
+// DESKTOP SECURITY
+.security {
+	background: black;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	text-align: center;
+	background: black;
+
+	.secLogo {
+		margin: 55px 0 20px 0;
+	}
+
+	h2 {
+		color: white;
+		padding: 0 625px;
+		font-size: 2.4rem;
+		line-height: 48px;
+		margin-bottom: 8px;
+		font-weight: 900 !important;
+	}
+
+	p {
+		color: lightgray;
+		padding: 13px 465px;
+		font-size: 1.1rem;
+		margin-bottom: 35px;
+	}
+
+	.secImg {
+		max-width: 100%;
+	}
+}

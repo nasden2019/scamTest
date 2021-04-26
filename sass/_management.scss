@@ -1,0 +1,125 @@
+.management {
+	padding: 10px 140px 70px 160px;
+	background: black;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding-top: 75px;
+
+	h5 {
+		color: $h5;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-size: 1.1rem;
+	}
+
+	h2 {
+		color: white;
+		font-size: 3rem;
+		font-weight: 900;
+		margin: 10px 0 13px 0;
+	}
+
+	p {
+		color: darkgray;
+		padding: 0 100px 0 0;
+		line-height: 28px;
+		font-size: 20px;
+	}
+
+	// --- small logos ---
+	.logos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-top: 60px;
+
+		.logo {
+			padding: 12px 0;
+		}
+
+		.img {
+			width: 120px;
+		}
+
+		.pLogo {
+			color: gray;
+			padding: 0 40px 0 0;
+			line-height: 28px;
+			margin-top: 10px;
+			font-size: 1.1rem;
+		}
+	}
+	// -CHAIR IMAGE-
+	.manageTwo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.mainBigImg {
+			width: 500px;
+			height: 560px;
+		}
+	}
+}
+
+// ----------- MOBILE MAIN -------------
+
+@media (max-width: 700px) {
+	.management {
+		text-align: center;
+		padding: 0 !important;
+		display: grid;
+		grid-template-columns: 1fr;
+		// padding: 1em;
+		// grid-row-gap: 100px;
+
+		.manageOne {
+			h2 {
+				margin: 18px 0 0 0;
+				font-size: 1.9rem;
+				padding: 0 25px;
+			}
+
+			p {
+				padding: 10px 40px 0 40px;
+				font-size: 1.1rem;
+			}
+
+			.logos {
+				display: grid;
+				grid-template-columns: 1fr;
+				margin: 10px 0 30px 0;
+
+				.logo {
+					padding: 12px 0;
+				}
+
+				.img {
+					width: 120px;
+				}
+
+				.pLogo {
+					color: white;
+					padding: 0 70px;
+					line-height: 24px;
+					margin-top: 10px;
+					font-size: 1rem;
+				}
+			}
+		}
+
+		.manageTwo {
+			margin-top: 30px;
+			// width: 100%;
+			// display: flex;
+			// justify-content: center;
+			// align-items: center;
+
+			.mainBigImg {
+				width: 100% !important;
+				height: 300px;
+				// height: 300px !important;
+				// padding: 45px;
+			}
+		}
+	}
+}

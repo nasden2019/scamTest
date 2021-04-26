@@ -1,0 +1,102 @@
+.global {
+	background: black;
+	padding-top: 40px;
+
+	// Texto
+	.globalText {
+		color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h2 {
+			font-size: 2.3rem;
+		}
+
+		p {
+			color: gray;
+			font-size: 20px;
+			margin-top: 7px;
+		}
+	}
+
+	// Images
+	.globalLogos {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center; // to center items!
+		margin-top: 110px;
+
+		.gLogo2ndRow {
+			margin-top: 40px;
+		}
+
+		.gImg {
+			width: 230px;
+			// height: 100px;
+		}
+
+		.gImgHbo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.gImgDiscovery {
+			width: 150px;
+		}
+
+		p {
+			color: white;
+			text-align: center;
+			margin-top: 13px;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+// MOBILE
+@media (max-width: 700px) {
+	.globalText {
+		h2 {
+			font-size: 1.7rem !important;
+			padding: 0 60px 0 60px;
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+			padding: 10px 40px 0 40px;
+			font-size: 0.7rem;
+		}
+	}
+
+	// logos
+	.globalLogos {
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+		text-align: center;
+		margin-top: 30px !important;
+
+		.gImg {
+			width: 180px !important;
+			// height: 100px;
+		}
+
+		.gImgHbo {
+			// display: flex;
+			// justify-content: center;
+			// align-items: center;
+			width: 180px;
+		}
+
+		.gImgDiscovery {
+			width: 120px !important;
+		}
+		.gHulu {
+			width: 140px;
+			margin: 70px 0 80px 0;
+		}
+	}
+}
